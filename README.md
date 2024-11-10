@@ -14,10 +14,10 @@ https://github.com/user-attachments/assets/465dfd0a-0c90-4c72-8c30-bd93c785874c
 - **Dashboard and Profile**: Simple profile and dashboard views are accessible to logged-in users.
   
 ## Advanced features
-- Configure `EMAIL_BACKEND` in `settings.py` for password reset; Gmail example provided.
-- `update_session_auth_hash` keeps users logged in after password change for convenience.
+- Configure EMAIL_BACKEND in settings.py for password reset; Gmail example provided.
+- update_session_auth_hash keeps users logged in after password change for convenience.
 - Customizable forms (`SignupForm`, `LoginForm`, `ForgotPasswordForm`) allow additional fields.
-- `try-except` blocks prevent errors in critical areas like password reset.
+- try-except blocks prevent errors in critical areas like password reset.
   
 ## Technologies Used
 - **Django**: Django's built-in authentication and form libraries.
@@ -81,13 +81,4 @@ your_project_name/
 ├── README.md
 └── requirements.txt           # Project dependencies
 ```
-
-## Usage
-
-1. **Signup**: New users can sign up by filling out the signup form at `/signup`.
-2. **Login**: Registered users can log in via `/login`.
-3. **Forgot Password**: Users can request a password reset link at `/forgot_password`.
-4. **Change Password**: Logged-in users can update their passwords at `/change_password`.
-5. **Dashboard and Profile**: Logged-in users can access their dashboard and view their profile at `/dashboard` and `/profile`.
-6. **Logout**: Users can log out via `/logout`.
 
