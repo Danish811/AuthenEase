@@ -5,17 +5,21 @@ For Code review, please check ```auth_user/views.py```
 ## Demo
 https://github.com/user-attachments/assets/465dfd0a-0c90-4c72-8c30-bd93c785874c
 
-## Features
-
+## Guide
 - **User Signup**: Users can create an account.
 - **User Login**: Existing users can log in.
 - **Password Reset**: Users can reset their passwords via email using secure, one-time links.
 - **Password Change**: Logged-in users can change their passwords.
 - **Logout**: Users can securely log out.
 - **Dashboard and Profile**: Simple profile and dashboard views are accessible to logged-in users.
-
+  
+## Advanced features
+- Configure `EMAIL_BACKEND` in `settings.py` for password reset; Gmail example provided.
+- `update_session_auth_hash` keeps users logged in after password change for convenience.
+- Customizable forms (`SignupForm`, `LoginForm`, `ForgotPasswordForm`) allow additional fields.
+- `try-except` blocks prevent errors in critical areas like password reset.
+  
 ## Technologies Used
-
 - **Django**: Django's built-in authentication and form libraries.
 - **Python**: Backend logic and form validation.
 - **HTML & CSS**: Templates for front-end rendering.
