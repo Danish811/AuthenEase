@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>Hi, {{ user.username }}!</h2>
+        <p>Welcome to your dashboard.</p>
+        <ul class="list-group">
+            <li class="list-group-item"><a href="{% url 'profile' %}">Profile</a></li>
+            <li class="list-group-item"><a href="{% url 'change_password' %}">Change Password</a></li>
+            <li class="list-group-item"><a href="{% url 'logout' %}">Logout</a></li>
+        </ul>
+    </div>
+</body>
+</html>
