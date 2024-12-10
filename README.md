@@ -23,14 +23,13 @@ https://github.com/user-attachments/assets/465dfd0a-0c90-4c72-8c30-bd93c785874c
 - **Django**: Django's built-in authentication and form libraries.
 - **Python**: Backend logic and form validation.
 - **HTML & CSS**: Templates for front-end rendering.
-- **JavaScript (optional)**: For frontend validation and interactivity.
 
 ## Setup Instructions
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/your_username/your_project_name.git
-   cd your_project_name
+   git clone https://github.com/Danish811/AuthenEase.git
+   cd AuthenEase
    ```
 
 2. **Set Up a Virtual Environment**
